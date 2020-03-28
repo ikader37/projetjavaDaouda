@@ -20,7 +20,7 @@ public class EtudiantEtranger extends Etudiant{
         this.pays=pays;
     }
     
-    public String toString(){
-        return super.toString(" Etranger")+"  Pays d'aorigine:"+this.pays;
+    public String afficher(){
+        return "Etudiant Etranger"+": Nom:"+super.getNom()+"  Prenom(s):"+super.getPrenom()+"  "+super.getAge()+"  Pays d'aorigine:"+this.pays;
     }
 }

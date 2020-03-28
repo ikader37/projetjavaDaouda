@@ -13,7 +13,7 @@ public class Etudiant {
     private String nom;
     private String prenom;
     private int age;
-
+    
     public String getNom() {
         return nom;
     }
@@ -46,7 +46,7 @@ public class Etudiant {
         this.age=age;
     }
     
-    public String toString(String type){
-        return "Etudiant"+type+": Nom:"+this.nom+"  Prenom(s):"+this.prenom+"  "+this.age;
+    public String afficher(){
+        return "Etudiant"+": Nom:"+this.nom+"  Prenom(s):"+this.prenom+"  "+this.age;
     }
 }

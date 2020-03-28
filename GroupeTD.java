@@ -42,7 +42,7 @@ public class GroupeTD {
         System.out.println("----------------------La liste des etudiants-------------------");
         int i=1;
         for (Etudiant e:listEtd){
-            System.out.println(i+"-"+e.toString());
+            System.out.println(i+"-"+e.afficher());
             i++;
         }
     }

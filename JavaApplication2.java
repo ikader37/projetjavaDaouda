@@ -17,9 +17,12 @@ public class JavaApplication2 {
     public static void main(String[] args) {
         // TODO code application logic here
         GroupeTD td=new GroupeTD(4);
+        Etudiant e=new EtudiantEtranger("Ndiaye","Moussa",20,"Senegal");
         td.ajouterEtudiant(new Etudiant("Sene","Pierre",12));
         td.ajouterEtudiant(new EtudiantSportif("Fall","Fatou",15,"Nataion"));
-        td.ajouterEtudiant(new EtudiantEtranger("Ndiaye","Moussa",20,"Senegal"));
+        td.ajouterEtudiant(e);
+        System.out.print("Recherche :"+td.RechercherEtudiant(e)+"\n");
+        System.out.print("Suppression :"+td.RemoveEtudiant(e)+"\n");
         td.afficherListe();
     }
     

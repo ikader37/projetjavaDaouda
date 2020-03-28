@@ -19,7 +19,7 @@ public class EtudiantSportif extends Etudiant{
         this.sport=sport;
     }
     
-    public String toString(){
-        return super.toString(" Sportif")+" Sport pratique:"+this.sport;
+    public String afficher(){
+        return "Etudiant Sportif "+": Nom:"+super.getNom()+"  Prenom(s):"+super.getPrenom()+"  "+super.getAge()+" Sport pratique:"+this.sport;
     }
 }
